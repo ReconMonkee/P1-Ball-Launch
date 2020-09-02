@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://project_1_assets/Projectile.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 9.93251
+
+[node name="Projectile" type="RigidBody2D"]
+position = Vector2( 0.117996, -7.62939e-06 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -9.85168, -9.26176 )
+scale = Vector2( 0.132656, 0.128412 )
+texture = ExtResource( 1 )
+centered = false
